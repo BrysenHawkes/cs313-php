@@ -24,7 +24,8 @@
 		</div>
 		<div class = "sidebar";>
 			  <?php
-			  echo "Today is " . date("Y/m/d");
+			  echo "Today is " . date("1") . "</br>";
+			  echo date("Y/m/d");
 			  ?>
 		</div>
 		<div class = "body";>
