@@ -38,7 +38,7 @@ body{
 
 .body{
 	width: 75%;
-	height: 600px;
+	height: 700px;
 	background: #999;
 	color: #222;
 	float: right;
@@ -47,7 +47,7 @@ body{
 
 .sidebar{
 	width: 25%; 
-	height: 600px;
+	height: 700px;
 	background: #777;
 	color: white;
 	float: left;
