@@ -16,7 +16,7 @@
 			</h1>
 		</div>
 		<div class = "topnav";>
-			<a href="dooza.php";>Home</a>
+			<a href="doorza.php";>Home</a>
 			<a href="checkout.php";>Checkout</a>
 		</div>
 		<div class = "sidebar";>
