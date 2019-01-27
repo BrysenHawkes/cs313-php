@@ -30,9 +30,10 @@ session_start();
 </div>
 <p>
 	This will be sent to the following address within the next 30 min 
-</p></br></br>
+</p>
 
-<?php echo $_POST["street"];?>	
+<?php echo $_POST["street"];?></br>
+<?php echo $_POST["city"];?>, <?php echo $_POST["state"];?><?php echo $_POST["zip"];?>
 
 <p>
 	Thank You.
