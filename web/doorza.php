@@ -46,8 +46,10 @@ if ( isset($_GET["add"]) ) {
 			<h3>Soda</h3>
 			<a href="?add=3">Add to Cart</a>
 		</div>
+		</br>
+	</div>br>
 		<div>
-			<a href="cart.php">Cart</a>
+			<a href="cart.php">View Cart</a>
 		</div>
 	</div>
 </body>

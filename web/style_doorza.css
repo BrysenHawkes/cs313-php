@@ -3,10 +3,12 @@ body{
 }
 
 .border{
-	width: 200px;
-	height: 700px;
-	padding: 30px;
+	width: 350px;
+	height: 600px;
+	padding: 20px;
 	background: #ABEBC6;
 	color: #888;
 	text-align: center;
+	border: 2px solid #999;
+	border-radius: 4px;
 }
