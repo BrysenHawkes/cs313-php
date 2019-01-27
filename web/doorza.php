@@ -28,7 +28,7 @@ if ( isset($_GET["add"]) ) {
 	<link REL="StyleSheet" TYPE="text/css" HREF="style_doorza.css">
 </head>
 <body>
-	<div class="border">
+	<div class="border" align="center">
 		<h3>MENU</h3>
 		<div class="product">
 			<h3>Cheese Pizza</h3>
@@ -47,7 +47,6 @@ if ( isset($_GET["add"]) ) {
 			<a href="?add=3">Add to Cart</a>
 		</div>
 		</br>
-	</div>br>
 		<div>
 			<a href="cart.php">View Cart</a>
 		</div>
