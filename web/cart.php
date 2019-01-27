@@ -26,8 +26,10 @@ echo ($_SESSION["qty"][3]);
 ?>
 <div class="product">
 	<?php
-	echo ("Cheese Pizza: ");
-	echo ($_SESSION["qty"][0]);
+		if($_SESSION["qty"][0] != 0){
+			echo ("Cheese Pizza: ");
+			echo ($_SESSION["qty"][0]);
+		}
 	?>
 </div>
 <div>
