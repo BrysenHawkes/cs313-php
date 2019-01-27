@@ -2,13 +2,22 @@
 
 session_start();
 
-var_dump($_SESSION['cart']);
-
-$whereIn = implode(',', $_SESSION['cart']);
-
-$sql = "
-	SELECT * FROM products
-	Where id IN (3,4,5)
-";
+//Delete
+if ( isset($_GET["delete"]) )
+   {
+   $i = $_GET["delete"];
+   $qty = $_SESSION["qty"][$i];
+   $qty--;
+   if($qty < 0){
+   	$qty = 0;
+   }
+   $_SESSION["qty"][$i] = $qty;
+  }
+ 
+echo ("Cheese Pizza");
+echo ($SESSION["qty"][0]);
+echo ("Pepperoni Pizza");
+echo ("Fudge Brownie");
+echo ("Soda");
 
 ?>
