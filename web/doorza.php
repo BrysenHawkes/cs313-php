@@ -1,29 +1,4 @@
-<?php 
 
-session_start();
-
-$products = array("Cheese Pizza","Pepperoni Pizza","Fudge Brownie","Soda");
-$amounts = array("4.99","5.99","3.99","1.99");
-
-//Start session
-if ( !isset($_SESSION["total"]) ) {
-   $_SESSION["total"] = 0;
-    $_SESSION["qty"][0] = 0;
-    $_SESSION["qty"][1] = 0;
-    $_SESSION["qty"][2] = 0;
-    $_SESSION["qty"][3] = 0;
-  }
- }
-
-//Add
-if ( isset($_GET["add"]) )
-   {
-   $i = $_GET["add"];
-   $qty = $_SESSION["qty"][$i] + 1;
-   $_SESSION["qty"][$i] = $qty;
- }
-
-?>
 <html>
 <div class="product">
 	<h3>Cheese Pizza</h3>
