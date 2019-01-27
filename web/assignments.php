@@ -14,6 +14,9 @@
 			<h1>
 			  ASSIGNMENTS
 			</h1>
+			<div>
+				<a href="doorza.php";>Shopping Cart</a>
+			</div>
 		</div>
 		<div class = "topnav";>
 			<a href="homepage.php";>Home</a>
