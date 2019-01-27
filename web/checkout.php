@@ -11,3 +11,6 @@ session_start();
 	Zip: <input id="zip" type="text"></br>
 	<input id="submit" type="submit">
 </form>
+<div>
+	<a href="cart.php">Cart</a>
+</div>
