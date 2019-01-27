@@ -25,5 +25,8 @@ echo ($_SESSION["qty"][3]);
 
 ?>
 <div>
+	<h3>Hello</h3>
+</div>
+<div>
 	<a href="doorza.php">Order</a>
 </div>
