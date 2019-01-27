@@ -15,12 +15,12 @@ if ( isset($_GET["delete"]) )
   }
  
 echo ("Cheese Pizza: ");
-echo ($_SESSION["qty"][0]. "</br>");
+echo ($_SESSION["qty"][0]);
 echo ("Pepperoni Pizza: ");
-echo ($_SESSION["qty"][0]. "</br>");
+echo ($_SESSION["qty"][0]);
 echo ("Fudge Brownie: ");
-echo ($_SESSION["qty"][0]. "</br>");
+echo ($_SESSION["qty"][0]);
 echo ("Soda: ");
-echo ($_SESSION["qty"][0]. "</br>");
+echo ($_SESSION["qty"][0]);
 
 ?>
