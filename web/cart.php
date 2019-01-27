@@ -46,3 +46,6 @@ if ( isset($_GET["delete"]) )
 <div>
 	<a href="doorza.php">Order</a>
 </div>
+<div>
+	<a href="checkout.php">Check Out</a>
+</div>
