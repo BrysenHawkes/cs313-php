@@ -29,6 +29,7 @@ echo ($_SESSION["qty"][3]);
 		if($_SESSION["qty"][0] != 0){
 			echo ("Cheese Pizza: ");
 			echo ($_SESSION["qty"][0]);
+			echo ("<a href="?delete=0">Remove From Cart</a>");
 		}
 	?>
 </div>
