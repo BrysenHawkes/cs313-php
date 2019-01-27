@@ -24,3 +24,6 @@ echo ("Soda: ");
 echo ($_SESSION["qty"][3]);
 
 ?>
+<div>
+	<a href="doorza.php">Order</a>
+</div>
