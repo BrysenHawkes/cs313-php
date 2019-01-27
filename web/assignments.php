@@ -14,9 +14,6 @@
 			<h1>
 			  ASSIGNMENTS
 			</h1>
-			<div>
-				<a href="doorza.php";>Shopping Cart</a>
-			</div>
 		</div>
 		<div class = "topnav";>
 			<a href="homepage.php";>Home</a>
@@ -29,7 +26,9 @@
 			  echo date("d/m/Y");
 			  ?>
 			</br>
-			<h3>Coming Soon</h3>
+			<div>
+				<a href="doorza.php";>Shopping Cart</a>
+			</div>
 			
 		</div>
 		<div class = "body";>
