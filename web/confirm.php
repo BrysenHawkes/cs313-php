@@ -40,7 +40,7 @@ session_start();
 		</p>
 
 		<?php echo htmlspecialchars($_POST["street"]);?></br>
-		<?php echo $_POST["city"];?>, <?php echo $_POST["state"];?> <?php echo $_POST["zip"];?>
+		<?php echo htmlspecialchars($_POST["city"]);?>, <?php echo htmlspecialchars($_POST["state"]);?> <?php echo $_POST["zip"];?>
 
 		<p>
 			Thank You.
