@@ -51,9 +51,12 @@ if ( isset($_GET["delete"]) )
 					<a href="?delete=3">Remove From Cart</a>
 			<?php } ?>
 		</div>
+		</br>
+		</br>
 		<div>
 			<a href="doorza.php">Order More</a>
 		</div>
+		</br>
 		<div>
 			<a href="checkout.php">Check Out</a>
 		</div>
