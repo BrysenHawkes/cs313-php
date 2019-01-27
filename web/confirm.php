@@ -39,7 +39,7 @@ session_start();
 			This will be sent to the following address within the next 30 min 
 		</p>
 
-		<?php echo $_POST["street"];?></br>
+		<?php echo htmlspecialchars($_POST["street"]);?></br>
 		<?php echo $_POST["city"];?>, <?php echo $_POST["state"];?> <?php echo $_POST["zip"];?>
 
 		<p>
