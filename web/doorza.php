@@ -24,6 +24,7 @@ if ( isset($_GET["add"]) )
  }
 
 ?>
+<html>
 <div class="product">
 	<h3>Cheese Pizza</h3>
 	<a href="?add=0">Add to Cart</a>
@@ -43,3 +44,4 @@ if ( isset($_GET["add"]) )
 <div>
 	<a href="cart.php">Cart</a>
 </div>
+</html>
