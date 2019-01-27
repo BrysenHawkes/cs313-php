@@ -13,11 +13,10 @@ if ( !isset($_SESSION["total"]) ) {
     $_SESSION["qty"][2] = 0;
     $_SESSION["qty"][3] = 0;
   }
- }
+ 
 
 //Add
-if ( isset($_GET["add"]) )
-   {
+if ( isset($_GET["add"]) ) {
    $i = $_GET["add"];
    $qty = $_SESSION["qty"][$i] + 1;
    $_SESSION["qty"][$i] = $qty;
