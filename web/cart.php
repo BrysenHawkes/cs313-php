@@ -32,28 +32,25 @@ echo ($_SESSION["qty"][3]);
 	<?php } ?>
 </div>
 <div class="product">
-	<?php
-		if($_SESSION["qty"][1] != 0){
-			echo ("Pepperoni Pizza: ");
-			echo ($_SESSION["qty"][1]);
-		}
-	?>
+	<?php if($_SESSION["qty"][1] != 0){ ?>
+			Pepperoni Pizza: 
+			<?php echo ($_SESSION["qty"][1]); ?>
+			<a href="?delete=1">Remove From Cart</a>
+	<?php } ?>
 </div>
 <div class="product">
-	<?php
-		if($_SESSION["qty"][2] != 0){
-			echo ("Fudge Brownie: ");
-			echo ($_SESSION["qty"][2]);
-		}
-	?>
+	<?php if($_SESSION["qty"][2] != 0){ ?>
+			Fudge Brownie: 
+			<?php echo ($_SESSION["qty"][2]); ?>
+			<a href="?delete=2">Remove From Cart</a>
+	<?php } ?>
 </div>
 <div class="product">
-	<?php
-		if($_SESSION["qty"][3] != 0){
-			echo ("Soda: ");
-			echo ($_SESSION["qty"][3]);
-		}
-	?>
+	<?php if($_SESSION["qty"][3] != 0){ ?>
+			Soda: 
+			<?php echo ($_SESSION["qty"][3]); ?>
+			<a href="?delete=3">Remove From Cart</a>
+	<?php } ?>
 </div>
 <div>
 	<a href="doorza.php">Order</a>
