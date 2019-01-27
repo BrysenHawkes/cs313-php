@@ -15,7 +15,7 @@ if ( isset($_GET["delete"]) )
   }
  
 echo ("Cheese Pizza");
-echo ($SESSION["qty"][0]);
+echo ($_SESSION["qty"][0]);
 echo ("Pepperoni Pizza");
 echo ("Fudge Brownie");
 echo ("Soda");
