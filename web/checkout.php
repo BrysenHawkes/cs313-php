@@ -4,12 +4,12 @@ session_start();
 
 ?>
 
-<form id="adress" action="confirm.php" >
-	Street: <input id="street" type="text"></br>
-	City: <input id="city" type="text"></br>
-	State: <input id="state" type="text"></br>
-	Zip: <input id="zip" type="text"></br>
-	<input id="submit" type="submit">
+<form action="confirm.php" method="post">
+	Street: <input name="street" type="text"></br>
+	City: <input name="city" type="text"></br>
+	State: <input name="state" type="text"></br>
+	Zip: <input name="zip" type="text"></br>
+	<input name="submit" type="submit">
 </form>
 <div>
 	<a href="cart.php">Cart</a>

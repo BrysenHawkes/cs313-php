@@ -29,6 +29,11 @@ session_start();
 	<?php } ?>
 </div>
 <p>
-	This will be sent to the following address within the next 30 min </br> 
+	This will be sent to the following address within the next 30 min 
+</p></br></br>
+
+<?php echo $_POST["street"];?>	
+
+<p>
 	Thank You.
 </p>
