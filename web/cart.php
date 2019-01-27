@@ -24,10 +24,10 @@ echo ("Soda: ");
 echo ($_SESSION["qty"][3]);
 
 ?>
-<div>
-	<h3>Hello</h3>
+<div class="product">
 	<?php
 	echo ("Cheese Pizza: ");
+	echo ($_SESSION["qty"][0]);
 	?>
 </div>
 <div>
