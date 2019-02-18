@@ -45,6 +45,13 @@
 		<div class = "sidebar";>
 		</div>
 		<div class = "body";>
+			<?php
+				foreach ($db->query('SELECT name FROM ingredient') as $row)
+				{
+  					echo 'ingredient name: ' . $row['name'];
+  					echo '<br/>';
+				}
+			?>
 		</div>
 		<div class = "foot";>
 		</div>
