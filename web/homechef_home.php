@@ -48,7 +48,7 @@
 			<?php
 				foreach ($db->query('SELECT ingredient_id FROM recipe') as $row)
 				{
-  					echo 'ingredient name: ' . $row['name'];
+  					echo 'ingredient name: ' . $row['ingredient_id'];
   					echo '<br/>';
 				}
 			?>
