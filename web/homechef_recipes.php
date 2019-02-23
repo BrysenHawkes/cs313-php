@@ -64,10 +64,10 @@
   						//	echo $row['name'];
   						//	echo '<br/>';
 						//}
-						$stmt = $db->prepare('SELECT name FROM ingredient WHERE id=:id');
-						$stmt->execute(array(':id' => $value));
+						$stmt = $db->prepare('SELECT name FROM ingredient where id=:id');
+						$stmt->bindValue(':id', $value, PDO::PARAM_INT);
+						$stmt->execute();
 						$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-						echo $rows;
   					}
 
   					echo '<br/><br/>';
