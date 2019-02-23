@@ -31,15 +31,7 @@
 	{
   		echo 'Error!: ' . $ex->getMessage();
   		die();
-	}
-
-
-	$recipe_array = array();
-	foreach ($db->query('SELECT name FROM recipes') as $row)
-	{
-  		array_push($recipe_array, $row['name']);
-	}
-		
+	}		
 ?>
 	<head>
 		<meta charset = "utf-8" />
