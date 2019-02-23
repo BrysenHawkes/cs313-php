@@ -51,6 +51,9 @@
   					echo 'Name: ' . $row['name'] . '<br/>';
 
   					$str = $row['ingredient_id'];
+  					preg_match_all('!\d+!', $str, $matches);
+  					print_r($matches);
+
   					echo $str;
   					echo 'ingredients: ' . $row['ingredient_id'];
   					echo 'amount: ' . $row['amount'];
