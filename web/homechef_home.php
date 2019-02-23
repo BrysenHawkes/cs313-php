@@ -70,6 +70,7 @@
   						echo '<br/>';
   						array_push($rarray, $row['name']);
 					}
+				print_r($rarray);
 			?>
 			<form>
 				<select>
