@@ -49,6 +49,9 @@
 				foreach ($db->query('SELECT * FROM recipe') as $row)
 				{
   					echo 'Name: ' . $row['name'] . '<br/>';
+
+  					$str = $row['ingredient_id'];
+  					echo $str;
   					echo 'ingredients: ' . $row['ingredient_id'];
   					echo 'amount: ' . $row['amount'];
   					echo 'Directions: ' . $row['direction'];
