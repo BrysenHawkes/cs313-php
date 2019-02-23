@@ -45,13 +45,21 @@
 		<div class = "sidebar";>
 		</div>
 		<div class = "body";>
+			<H3>Registered Ingredients</H3>
+			<p>
 			<?php
 				foreach ($db->query('SELECT name FROM ingredient') as $row)
 				{
-  					echo 'ingredient name: ' . $row['name'];
+  					echo $row['name'];
   					echo '<br/>';
 				}
 			?>
+			</p>
+			<form>
+				<input type = "textbox" name = "name">
+				<input type = "price" name = "price">
+				<input type = "submit">
+			</form>
 		</div>
 		<div class = "foot";>
 		</div>
