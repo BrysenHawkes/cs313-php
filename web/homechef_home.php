@@ -68,6 +68,7 @@
 					{
   						echo $row['name'];
   						echo '<br/>';
+  						array_push($rarray, $row['name']);
 					}
 			?>
 			<form>
