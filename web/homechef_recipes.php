@@ -45,7 +45,7 @@
 		<div class = "sidebar";>
 		</div>
 		<div class = "body";>
-			<h3>RECIPES:</h3><br/><hr/>
+			<h3>Registered Recipes:</h3><br/><hr/>
 			<?php
 				//DISPLAY RECIPE
 				foreach ($db->query('SELECT * FROM recipe') as $row)

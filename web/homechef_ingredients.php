@@ -45,8 +45,7 @@
 		<div class = "sidebar";>
 		</div>
 		<div class = "body";>
-			<h3>Registered Ingredients</h3>
-			<p>
+			<h3>Registered Ingredients</h3><br/><hr/>
 			<?php
 				foreach ($db->query('SELECT name FROM ingredient') as $row)
 				{
@@ -54,7 +53,7 @@
   					echo '<br/>';
 				}
 			?>
-			</p>
+			<hr/>
 			<br/><br/>
 			<h3>Add new Ingredient</h3>
 			<form>
