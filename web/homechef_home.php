@@ -69,7 +69,7 @@
 			<form>
 				<select>
 					<?php
-					print_r($recipe_array);
+						
 					?>
 				</select>
 			</form>
