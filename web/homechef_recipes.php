@@ -46,19 +46,18 @@
 		</div>
 		<div class = "body";>
 			<?php
+				//DISPLAY RECIPE
 				foreach ($db->query('SELECT * FROM recipe') as $row)
 				{
-  					echo 'Name: ' . $row['name'] . '<br/>';
+  					echo $row['name'] . '<br/><br/>';
 
   					//CONVERT STRING INTO ARRAY
   					$str = $row['ingredient_id'];
   					preg_match_all('!\d+!', $str, $matches);
-  					echo '<br/><br/>';
 
   					//CONVERT STRING INTO ARRAY
   					$str_amount = $row['amount'];
   					preg_match_all('!\d+!', $str_amount, $amount);
-  					echo '<br/><br/>';
 
   					//INPUT ARRAY INTO A SQL QUERY
   					$i = 0;
@@ -75,11 +74,8 @@
   					}
 
   					echo '<br/><br/>';
-  					echo $str;
-  					echo 'ingredients: ' . $row['ingredient_id'];
-  					echo 'amount: ' . $row['amount'];
   					echo 'Directions: ' . $row['direction'];
-  					echo '<br/>';
+  					echo '<br/><hr/>';
 				}
 			?>
 		</div>
