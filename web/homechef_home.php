@@ -1,4 +1,16 @@
 <?php
+	session_start();
+
+	if ( !isset($_SESSION["total"]) ) {
+   		$_SESSION["total"] = array();
+  	}
+ 
+
+ 	if ( isset($_GET["add"]) ) {
+   		$i = $_GET["add"];
+   		array_push($_SESSION["total"],$i);
+ 	}
+
 	try
 	{
   		$dbUrl = getenv('DATABASE_URL');
@@ -45,13 +57,8 @@
 		<div class = "sidebar";>
 		</div>
 		<div class = "body";>
-			<?php
-				foreach ($db->query('SELECT ingredient_id FROM recipe') as $row)
-				{
-  					echo 'ingredient name: ' . $row['ingredient_id'];
-  					echo '<br/>';
-				}
-			?>
+			<h3>Choose Recipe</h3>
+
 		</div>
 		<div class = "foot";>
 		</div>
