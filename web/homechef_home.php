@@ -75,7 +75,7 @@
 			<form>
 				<select>
 					<?php
-
+						echo '<option>' . 'hello' . '</option>';
 					?>
 				</select>
 			</form>
