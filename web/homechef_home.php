@@ -62,6 +62,13 @@
 		</div>
 		<div class = "body";>
 			<h3>Choose Recipe</h3>
+			<?php
+				foreach ($db->query('SELECT name FROM recipe') as $row)
+					{
+  						echo $row['name'];
+  						echo '<br/>';
+					}
+			?>
 			<form>
 				<select>
 					<?php
@@ -69,13 +76,6 @@
 					?>
 				</select>
 			</form>
-			<?php
-			foreach ($db->query('SELECT name FROM ingredient') as $row)
-				{
-  					echo $row['name'];
-  					echo '<br/>';
-				}
-			?>
 		</div>
 		<div class = "foot";>
 		</div>
