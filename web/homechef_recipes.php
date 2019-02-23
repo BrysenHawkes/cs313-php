@@ -55,14 +55,23 @@
   					preg_match_all('!\d+!', $str, $matches);
   					echo '<br/><br/>';
 
+  					//CONVERT STRING INTO ARRAY
+  					$str_amount = $row['amount'];
+  					preg_match_all('!\d+!', $str_amount, $amount);
+  					echo '<br/><br/>';
+
   					//INPUT ARRAY INTO A SQL QUERY
+  					$i = 0;
   					foreach ($matches[0] as $value)
   					{
 						$stmt = $db->prepare('SELECT name FROM ingredient where id=:id');
 						$stmt->bindValue(':id', $value, PDO::PARAM_INT);
 						$stmt->execute();
 						$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-						echo $rows[0]['name'] . '<br/>';
+
+						//display
+						echo $rows[0]['name'] . ' ';
+						echo $amount[0][$i] . '<br/>';
   					}
 
   					echo '<br/><br/>';
