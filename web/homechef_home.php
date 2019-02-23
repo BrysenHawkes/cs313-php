@@ -72,14 +72,15 @@
 					}
 				print_r($rarray);
 			?>
-			<form>
-				<select>
+			<form action="homechef_home.php" method="get">
+				<select name="add">
 					<?php
 						foreach ($rarray as $key => $value) {
 							echo '<option value = " ' . $key . ' ">' . $value . '</option>';
 						}
 					?>
 				</select>
+				<input type="submit">
 			</form>
 		</div>
 		<div class = "foot";>
