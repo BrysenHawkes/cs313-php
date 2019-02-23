@@ -31,7 +31,11 @@
 	{
   		echo 'Error!: ' . $ex->getMessage();
   		die();
-	}		
+	}
+
+
+
+
 ?>
 	<head>
 		<meta charset = "utf-8" />
@@ -65,6 +69,13 @@
 					?>
 				</select>
 			</form>
+			<?php
+			foreach ($db->query('SELECT name FROM ingredient') as $row)
+				{
+  					echo $row['name'];
+  					echo '<br/>';
+				}
+			?>
 		</div>
 		<div class = "foot";>
 		</div>
