@@ -52,7 +52,7 @@
 
   					$str = $row['ingredient_id'];
   					preg_match_all('!\d+!', $str, $matches);
-  					echo $matches[1];
+  					echo $matches[0][1];
   					print_r($matches);
 
   					echo $str;
