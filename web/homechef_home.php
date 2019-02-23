@@ -33,7 +33,14 @@
   		die();
 	}
 
-
+	if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['clear']))
+    {
+        clear();
+    }
+    function clear()
+    {
+    	$_SESSION["total"] = array();
+    }
 
 
 ?>
@@ -81,6 +88,9 @@
 					?>
 				</select>
 				<input type="submit">
+			</form>
+			<form action="homechef_home.php" method="post">
+    			<input type="submit" name="clear" value="GO" />
 			</form>
 			<?php
 				print_r($_SESSION["total"]);
