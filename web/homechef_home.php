@@ -75,8 +75,8 @@
 			<form>
 				<select>
 					<?php
-						foreach ($rarray as $value) {
-							echo '<option value = "">' . $value . '</option>';
+						foreach ($rarray as $key => $value) {
+							echo '<option value = " ' . $key . ' ">' . $value . '</option>';
 						}
 					?>
 				</select>
