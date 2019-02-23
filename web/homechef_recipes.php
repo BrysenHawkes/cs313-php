@@ -54,7 +54,18 @@
   					preg_match_all('!\d+!', $str, $matches);
   					echo $matches[0][1];
   					print_r($matches);
+  					echo '<br/><br/>';
 
+  					foreach ($matches[0] as $value)
+  					{
+  						foreach ($db->query('SELECT name FROM ingredient WHERE id = $value') as $row)
+						{
+  							echo $row['name'];
+  							echo '<br/>';
+						}
+  					}
+
+  					echo '<br/><br/>';
   					echo $str;
   					echo 'ingredients: ' . $row['ingredient_id'];
   					echo 'amount: ' . $row['amount'];
