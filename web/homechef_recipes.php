@@ -68,7 +68,7 @@
 						$stmt->bindValue(':id', $value, PDO::PARAM_INT);
 						$stmt->execute();
 						$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-						echo $rows['name'];
+						print_r($rows);
   					}
 
   					echo '<br/><br/>';
