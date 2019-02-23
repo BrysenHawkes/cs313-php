@@ -46,9 +46,12 @@
 		</div>
 		<div class = "body";>
 			<?php
-				foreach ($db->query('SELECT ingredient_id FROM recipe') as $row)
+				foreach ($db->query('SELECT * FROM recipe') as $row)
 				{
+  					echo 'ingredient name: ' . $row['name'];
   					echo 'ingredient name: ' . $row['ingredient_id'];
+  					echo 'ingredient name: ' . $row['amount'];
+  					echo 'ingredient name: ' . $row['direction'];
   					echo '<br/>';
 				}
 			?>
