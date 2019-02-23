@@ -59,11 +59,7 @@
   					foreach ($matches[0] as $value)
   					{
   						echo $value . '<br/>';
-  						foreach ($db->query('SELECT name FROM ingredient Where id = $value') as $row)
-						{
-  							echo $row['name'];
-  							echo '<br/>';
-						}
+  						
   					}
 
   					echo '<br/><br/>';
