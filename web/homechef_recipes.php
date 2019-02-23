@@ -59,11 +59,15 @@
   					foreach ($matches[0] as $value)
   					{
   						echo $value . '<br/>';
-  						foreach ($db->query('SELECT name FROM ingredient where id = 1') as $row)
-						{
-  							echo $row['name'];
-  							echo '<br/>';
-						}
+  						//foreach ($db->query('SELECT name FROM ingredient where id = 1') as $row)
+						//{
+  						//	echo $row['name'];
+  						//	echo '<br/>';
+						//}
+						$stmt = $db->prepare('SELECT name FROM ingredient WHERE id=:id');
+						$stmt->execute(array(':id' => $value));
+						$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+						echo $rows;
   					}
 
   					echo '<br/><br/>';
