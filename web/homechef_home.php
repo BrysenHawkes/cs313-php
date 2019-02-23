@@ -63,6 +63,7 @@
 		<div class = "body";>
 			<h3>Choose Recipe</h3>
 			<?php
+				$rarray = array();
 				foreach ($db->query('SELECT name FROM recipe') as $row)
 					{
   						echo $row['name'];
