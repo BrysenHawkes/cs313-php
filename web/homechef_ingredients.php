@@ -34,7 +34,7 @@
 	<body>
 		<div class = "head";>
 			<h1>
-			  Home Chef
+			   Ingredients
 			</h1>
 		</div>
 		<div class = "topnav";>
