@@ -50,11 +50,12 @@
 				{
   					echo 'Name: ' . $row['name'] . '<br/>';
 
+  					//CONVERT STRING INTO ARRAY
   					$str = $row['ingredient_id'];
   					preg_match_all('!\d+!', $str, $matches);
-  					echo $matches[0][1];
   					echo '<br/><br/>';
 
+  					//INPUT ARRAY INTO A SQL QUERY
   					foreach ($matches[0] as $value)
   					{
 						$stmt = $db->prepare('SELECT name FROM ingredient where id=:id');
