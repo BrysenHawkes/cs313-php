@@ -48,10 +48,10 @@
 			<?php
 				foreach ($db->query('SELECT * FROM recipe') as $row)
 				{
-  					echo 'ingredient name: ' . $row['name'] . '<br/>';
-  					echo 'ingredient id: ' . $row['ingredient_id'];
-  					echo 'ingredient amount: ' . $row['amount'];
-  					echo 'ingredient directions: ' . $row['direction'];
+  					echo 'Name: ' . $row['name'] . '<br/>';
+  					echo 'ingredients: ' . $row['ingredient_id'];
+  					echo 'amount: ' . $row['amount'];
+  					echo 'Directions: ' . $row['direction'];
   					echo '<br/>';
 				}
 			?>
