@@ -82,6 +82,9 @@
 				</select>
 				<input type="submit">
 			</form>
+			<?php
+				print_r($_SESSION["total"]);
+			?>
 		</div>
 		<div class = "foot";>
 		</div>
