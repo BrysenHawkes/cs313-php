@@ -38,7 +38,6 @@
 			</h1>
 		</div>
 		<div class = "topnav";>
-			<a href="homechef_home.php";>Home</a>
 			<a href="homechef_recipes.php";>Recipes</a>
 			<a href="homechef_ingredients.php";>Ingredients</a>
 		</div>
@@ -56,9 +55,9 @@
 			<hr/>
 			<br/><br/>
 			<h3>Add new Ingredient</h3>
-			<form>
+			<form method=post"" action="homechef_insertingredient.php">
 				<input type = "textbox" name = "name">
-				<input type = "price" name = "price">
+				<input type = "textbox" name = "price">
 				<input type = "submit">
 			</form>
 		</div>
