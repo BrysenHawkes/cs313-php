@@ -24,6 +24,6 @@
 	$ingredient_name = htmlspecialchars($_POST['name']);
 	$ingredient_price = htmlspecialchars($_POST['price']);
 
-	echo '$ingredient_name\n';
-	echo '$ingredient_price\n';
+	echo "$ingredient_name\n";
+	echo "$ingredient_price\n";
 ?>
