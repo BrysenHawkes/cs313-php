@@ -31,4 +31,8 @@
 	$stmt->bindValue(':ingredient_name', $ingredient_name, PDO::PARAM_STR);
 	//$stmt->bindValue(':ingredient_price', $ingredient_price, PDO::PARAM_);
 	$stmt->execute();
+
+	$new_page = "homechef_ingredients.php";
+	header("Location: $new_page");
+	die();
 ?>
