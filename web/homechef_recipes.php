@@ -45,13 +45,6 @@
 		<div class = "sidebar";>
 			<h3>Add New Recipe</h3>
 
-				<?php
-					//foreach ($db->query('SELECT name FROM ingredient') as $row)
-					//{
-  					//	echo $row['id'];
-					//}
-				?>
-
 			<form method="post" action="homechef_insertrecipe.php">
 				NAME: <input type="textbox" name="name"><br/><br/>
 				INGREDIENTS<br/>

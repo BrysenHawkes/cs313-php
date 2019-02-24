@@ -57,6 +57,16 @@ try
 
 	echo $name;
 	echo $ingredient_1 . $ingredient_1_amount;
+
+	$id_string = "'{";
+	$amount_string = "'{";
+
+	if($ingredient_1 != 0){
+		$id_string = $id_string . $ingredient_1;
+	}
+
+	echo '<br/>' . $id_string;
+
 	//$stmt = $db->prepare('INSERT INTO ingredient(name,price) VALUES (:ingredient_name, 1.00);');
 	//$stmt->bindValue(':ingredient_name', $ingredient_name, PDO::PARAM_STR);
 	//$stmt->bindValue(':ingredient_price', $ingredient_price, PDO::PARAM_);
