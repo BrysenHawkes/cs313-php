@@ -120,16 +120,26 @@ try
 	echo '<br/>' . $directions;
 
 	$stmt = $db->prepare('INSERT INTO recipe(name,ingredient_id,amount,direction) VALUES (:recipe_name, :ingredient_id, :amount, :direction);');
-	$stmt->bindValue(':recipe_name', $name, PDO::PARAM_STR);
-	$stmt->bindValue(':igredient_id', $id_string, PDO::PARAM_STR);
-	$stmt->bindValue(':amount', $amount_string, PDO::PARAM_STR);
-	$stmt->bindValue(':direction', $directions, PDO::PARAM_STR);
+	$stmt->bindValue(':recipe_name', (string)$name, PDO::PARAM_STR);
+	$stmt->bindValue(':igredient_id', (string)$id_string, PDO::PARAM_STR);
+	$stmt->bindValue(':amount', (string)$amount_string, PDO::PARAM_STR);
+	$stmt->bindValue(':direction', (string)$directions, PDO::PARAM_STR);
 	//$stmt->bindValue(':ingredient_price', $ingredient_price, PDO::PARAM_);
 	$stmt->execute();
+
+	echo '<br/>' . $id_string;
+	echo '<br/>' . $amount_string;
+	echo '<br/>' . $name;
+	echo '<br/>' . $directions;
 
 	$new_page = "homechef_recipes.php";
 	header("Location: $new_page");
 	die();
+
+	echo '<br/>' . $id_string;
+	echo '<br/>' . $amount_string;
+	echo '<br/>' . $name;
+	echo '<br/>' . $directions;
 // name
 // ingredient_1 , ingredient_1_amount (1-10)
 // directions
