@@ -45,18 +45,18 @@
 		<div class = "sidebar";>
 			<h3>Add New Recipe</h3>
 			<form method="post" action="homechef_insertrecipe.php">
-				NAME: <input type="textbox" name="name"><br/>
+				NAME: <input type="textbox" name="name"><br/><br/>
 				1st INGREDIENT<br/>
 				<select name="ingredient_1">
 				<?php
 				//	echo "<select name='ingredient_1'>";
-				//	foreach ($bd->query('SELECT id, name FROM ingredient') as $row){
-				//		echo "<option value='" . $row['id'] ."'>" . $row['name'] . "</option>";
-				//	}
+					foreach ($bd->query('SELECT * FROM ingredient') as $row){
+						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					}
 				//	echo "</select>";
 				?>
 				</select>
-				<br/>
+				<br/><br/>
 				<input type="submit">
 			</form>
 		</div>
