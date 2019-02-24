@@ -228,6 +228,10 @@
 				<br/>				
 
 				<br/><br/>
+
+				<textarea name="directions">place directions here.</textarea>
+
+				<br/><br/>
 				<input type="submit">
 			</form>
 		</div>
