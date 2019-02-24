@@ -56,8 +56,7 @@
 			<br/><br/>
 			<h3>Add new Ingredient</h3>
 			<form method="post" action="homechef_insertingredient.php">
-				<input type = "textbox" name = "name">
-				<input type = "textbox" name = "price">
+				NAME: <input type = "textbox" name = "name">
 				<input type = "submit">
 			</form>
 		</div>

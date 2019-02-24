@@ -22,10 +22,8 @@
 	}
 
 	$ingredient_name = htmlspecialchars($_POST['name']);
-	$ingredient_price = htmlspecialchars($_POST['price']);
 
 	echo "$ingredient_name\n";
-	echo "$ingredient_price\n";
 
 	$stmt = $db->prepare('INSERT INTO ingredient(name,price) VALUES (:ingredient_name, 1.00);');
 	$stmt->bindValue(':ingredient_name', $ingredient_name, PDO::PARAM_STR);
