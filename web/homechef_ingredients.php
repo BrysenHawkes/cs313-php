@@ -26,7 +26,7 @@
     		<meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
     		<meta name = "viewport" content = "width=device-width, initial-scale=1"/>
 		<title>Home Chef</title>
-		<link REL="StyleSheet" TYPE="text/css" HREF="style.css">
+		<link REL="StyleSheet" TYPE="text/css" HREF="style2.css">
 		<script>
 		</script>
 	</head>
