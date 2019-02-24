@@ -20,6 +20,7 @@
   		echo 'Error!: ' . $ex->getMessage();
   		die();
 	}
+
 ?>
 	<head>
 		<meta charset = "utf-8" />
@@ -42,6 +43,18 @@
 			<a href="homechef_ingredients.php";>Ingredients</a>
 		</div>
 		<div class = "sidebar";>
+			<h3>Add New Recipe</h3>
+			<form method="post" action="homechef_insertrecipe.php">
+				<input type="textbox" name="name">
+				<?php
+					echo "<select name='ingredient_1'>";
+					foreach ($bd->query('SELECT id, name FROM ingredient') as $row){
+						echo "<option value='" . $row['id'] ."'>" . $row['name'] . "</option>";
+					}
+					echo "</select>";
+				?>
+				<input type="submit">
+			</form>
 		</div>
 		<div class = "body";>
 			<h3>Registered Recipes:</h3><br/><hr/>

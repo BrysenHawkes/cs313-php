@@ -42,6 +42,11 @@
 			<a href="homechef_ingredients.php";>Ingredients</a>
 		</div>
 		<div class = "sidebar";>
+			<h3>Add new Ingredient</h3>
+			<form method="post" action="homechef_insertingredient.php">
+				NAME: <input type = "textbox" name = "name">
+				<input type = "submit">
+			</form>
 		</div>
 		<div class = "body";>
 			<h3>Registered Ingredients</h3><br/><hr/>
@@ -54,11 +59,7 @@
 			?>
 			<hr/>
 			<br/><br/>
-			<h3>Add new Ingredient</h3>
-			<form method="post" action="homechef_insertingredient.php">
-				NAME: <input type = "textbox" name = "name">
-				<input type = "submit">
-			</form>
+			
 		</div>
 		<div class = "foot";>
 		</div>
