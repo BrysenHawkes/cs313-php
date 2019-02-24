@@ -49,11 +49,11 @@
 				1st INGREDIENT<br/>
 				<select name="ingredient_1">
 				<?php
-				//	echo "<select name='ingredient_1'>";
-					foreach ($bd->query('SELECT * FROM ingredient') as $row){
-						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					{
+  						echo $row['name'];
+  						echo '<br/>';
 					}
-				//	echo "</select>";
 				?>
 				</select>
 				<br/><br/>
