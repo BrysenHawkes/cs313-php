@@ -26,4 +26,9 @@
 
 	echo "$ingredient_name\n";
 	echo "$ingredient_price\n";
+
+	$stmt = $db->prepare('INSERT INTO ingredient(name,price) VALUES (:ingredient_name, 1.00);');
+	$stmt->bindValue(':ingredient_name', $ingredient_name, PDO::PARAM_STR);
+	//$stmt->bindValue(':ingredient_price', $ingredient_price, PDO::PARAM_);
+	$stmt->execute();
 ?>
