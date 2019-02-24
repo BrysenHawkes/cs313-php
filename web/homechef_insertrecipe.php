@@ -119,9 +119,9 @@ try
 	echo '<br/>' . $name;
 	echo '<br/>' . $directions;
 
-	$stmt = $db->prepare('INSERT INTO recipe(name,direction,amount) VALUES (:recipe_name, :direction, :amount);');
+	$stmt = $db->prepare('INSERT INTO recipe(name,direction,amount,ingredient_id) VALUES (:recipe_name, :direction, :amount, :id);');
 	$stmt->bindValue(':recipe_name', $name, PDO::PARAM_STR);
-	//$stmt->bindValue(':igredient_id', $id_string, PDO::PARAM_STR);
+	$stmt->bindValue(':id', $id_string, PDO::PARAM_STR);
 	$stmt->bindValue(':amount', $amount_string, PDO::PARAM_STR);
 	$stmt->bindValue(':direction', $directions, PDO::PARAM_STR);
 	//$stmt->bindValue(':ingredient_price', $ingredient_price, PDO::PARAM_);
