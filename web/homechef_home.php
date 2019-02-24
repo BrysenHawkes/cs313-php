@@ -73,11 +73,8 @@
 				$rarray = array();
 				foreach ($db->query('SELECT name FROM recipe') as $row)
 					{
-  						echo $row['name'];
-  						echo '<br/>';
   						array_push($rarray, $row['name']);
 					}
-				print_r($rarray);
 			?>
 			<form action="homechef_home.php" method="get">
 				<select name="add">
@@ -87,10 +84,11 @@
 						}
 					?>
 				</select>
-				<input type="submit">
+				<br/>
+				<input type="submit" value="ADD">
 			</form>
 			<form action="homechef_home.php" method="post">
-    			<input type="submit" name="clear" value="GO" />
+    			<input type="submit" name="clear" value="CLEAR" />
 			</form>
 			<?php
 				print_r($_SESSION["total"]);
