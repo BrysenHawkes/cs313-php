@@ -44,13 +44,21 @@
 		</div>
 		<div class = "sidebar";>
 			<h3>Add New Recipe</h3>
+
+				<?php
+					//foreach ($db->query('SELECT name FROM ingredient') as $row)
+					//{
+  					//	echo $row['id'];
+					//}
+				?>
+
 			<form method="post" action="homechef_insertrecipe.php">
 				NAME: <input type="textbox" name="name"><br/><br/>
 				INGREDIENTS<br/>
 				<select name="ingredient_1">
 					<option value ="0">none</option>
 				<?php
-					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					foreach ($db->query('SELECT * FROM ingredient') as $row)
 					{
   						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
 					}
