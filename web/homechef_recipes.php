@@ -51,7 +51,7 @@
 				<?php
 					foreach ($db->query('SELECT name FROM ingredient') as $row)
 					{
-  						echo "<option>1</option>";
+  						echo "<option>" . $row['name'] . "</option>";
 					}
 				?>
 				</select>
