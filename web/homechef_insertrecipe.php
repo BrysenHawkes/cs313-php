@@ -63,56 +63,70 @@ try
 
 	if($ingredient_1 != 0){
 		$id_string = $id_string . $ingredient_1;
+		$amount_string = $amount_string . $ingredient_1_amount;
 	}
 
 	if($ingredient_2 != 0){
 		$id_string = $id_string . "," . $ingredient_2;
+		$amount_string = $amount_string . "," . $ingredient_2_amount;
 	}
 
 	if($ingredient_3 != 0){
 		$id_string = $id_string . "," . $ingredient_3;
+		$amount_string = $amount_string . "," . $ingredient_3_amount;
 	}
 
 	if($ingredient_4 != 0){
 		$id_string = $id_string . "," . $ingredient_4;
+		$amount_string = $amount_string . "," . $ingredient_4_amount;
 	}
 
 	if($ingredient_5 != 0){
 		$id_string = $id_string . "," . $ingredient_5;
+		$amount_string = $amount_string . "," . $ingredient_5_amount;
 	}
 
 	if($ingredient_6 != 0){
 		$id_string = $id_string . "," . $ingredient_6;
+		$amount_string = $amount_string . "," . $ingredient_6_amount;
 	}
 
 	if($ingredient_7 != 0){
 		$id_string = $id_string . "," . $ingredient_7;
+		$amount_string = $amount_string . "," . $ingredient_7_amount;
 	}
 
 	if($ingredient_8 != 0){
 		$id_string = $id_string . "," . $ingredient_8;
+		$amount_string = $amount_string . "," . $ingredient_8_amount;
 	}
 
 	if($ingredient_9 != 0){
 		$id_string = $id_string . "," . $ingredient_9;
+		$amount_string = $amount_string . "," . $ingredient_9_amount;
 	}
 
 	if($ingredient_10 != 0){
 		$id_string = $id_string . "," . $ingredient_10;
+		$amount_string = $amount_string . "," . $ingredient_10_amount;
 	}
 
 	$id_string = $id_string . "}'";
+	$amount_string = $amount_string . "}'";
 
 	echo '<br/>' . $id_string;
 
-	//$stmt = $db->prepare('INSERT INTO ingredient(name,price) VALUES (:ingredient_name, 1.00);');
-	//$stmt->bindValue(':ingredient_name', $ingredient_name, PDO::PARAM_STR);
+	$stmt = $db->prepare('INSERT INTO recipe(name,ingredient_id,amount,direction) VALUES (:recipe_name, :ingredient_id, :amount, :direction);');
+	$stmt->bindValue(':recipe_name', $name, PDO::PARAM_STR);
+	$stmt->bindValue(':igredient_id', $id_string, PDO::PARAM_STR);
+	$stmt->bindValue(':amount', $amount_string, PDO::PARAM_STR);
+	$stmt->bindValue(':direction', $directions, PDO::PARAM_STR);
 	//$stmt->bindValue(':ingredient_price', $ingredient_price, PDO::PARAM_);
-	//$stmt->execute();
+	$stmt->execute();
 
-	//$new_page = "homechef_recipes.php";
-	//header("Location: $new_page");
-	//die();
+	$new_page = "homechef_recipes.php";
+	header("Location: $new_page");
+	die();
 // name
 // ingredient_1 , ingredient_1_amount (1-10)
 // directions
