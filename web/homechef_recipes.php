@@ -45,7 +45,9 @@
 		<div class = "sidebar";>
 			<h3>Add New Recipe</h3>
 			<form method="post" action="homechef_insertrecipe.php">
-				<input type="textbox" name="name">
+				NAME: <input type="textbox" name="name"><br/>
+				1st INGREDIENT<br/>
+				<select name="ingredient_1">
 				<?php
 				//	echo "<select name='ingredient_1'>";
 				//	foreach ($bd->query('SELECT id, name FROM ingredient') as $row){
@@ -53,6 +55,8 @@
 				//	}
 				//	echo "</select>";
 				?>
+				</select>
+				<br/>
 				<input type="submit">
 			</form>
 		</div>
