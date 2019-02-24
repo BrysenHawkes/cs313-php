@@ -119,13 +119,19 @@ try
 	echo '<br/>' . $name;
 	echo '<br/>' . $directions;
 
-	$stmt = $db->prepare('INSERT INTO recipe(name,ingredient_id,amount,direction) VALUES (:recipe_name, :ingredient_id, :amount, :direction);');
-	$stmt->bindValue(':recipe_name', $name, PDO::PARAM_STR);
-	$stmt->bindValue(':igredient_id', $id_string, PDO::PARAM_STR);
-	$stmt->bindValue(':amount', $amount_string, PDO::PARAM_STR);
-	$stmt->bindValue(':direction', $directions, PDO::PARAM_STR);
+	$stmt = $db->prepare('INSERT INTO recipe(name,ingredient_id,amount,direction) VALUES ('a', 'b', 'c', 'd');');
+	//$stmt->bindValue(':recipe_name', $name, PDO::PARAM_STR);
+	//$stmt->bindValue(':igredient_id', $id_string, PDO::PARAM_STR);
+	//$stmt->bindValue(':amount', $amount_string, PDO::PARAM_STR);
+	//$stmt->bindValue(':direction', $directions, PDO::PARAM_STR);
 	//$stmt->bindValue(':ingredient_price', $ingredient_price, PDO::PARAM_);
 	$stmt->execute();
+
+
+	//$stmt = $db->prepare('INSERT INTO ingredient(name,price) VALUES (:ingredient_name, 1.00);');
+	//$stmt->bindValue(':ingredient_name', $ingredient_name, PDO::PARAM_STR);
+	//$stmt->bindValue(':ingredient_price', $ingredient_price, PDO::PARAM_);
+	//$stmt->execute();
 
 	echo '<br/>' . $id_string;
 	echo '<br/>' . $amount_string;
