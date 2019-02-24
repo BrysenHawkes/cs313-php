@@ -47,11 +47,11 @@
 			<form method="post" action="homechef_insertrecipe.php">
 				<input type="textbox" name="name">
 				<?php
-					echo "<select name='ingredient_1'>";
-					foreach ($bd->query('SELECT id, name FROM ingredient') as $row){
-						echo "<option value='" . $row['id'] ."'>" . $row['name'] . "</option>";
-					}
-					echo "</select>";
+				//	echo "<select name='ingredient_1'>";
+				//	foreach ($bd->query('SELECT id, name FROM ingredient') as $row){
+				//		echo "<option value='" . $row['id'] ."'>" . $row['name'] . "</option>";
+				//	}
+				//	echo "</select>";
 				?>
 				<input type="submit">
 			</form>
