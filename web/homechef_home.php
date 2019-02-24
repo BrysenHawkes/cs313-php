@@ -92,6 +92,8 @@
 			</form>
 			<?php
 				print_r($_SESSION["total"]);
+				echo '<hr/>';
+				
 			?>
 		</div>
 		<div class = "foot";>

@@ -46,8 +46,9 @@
 			<h3>Add New Recipe</h3>
 			<form method="post" action="homechef_insertrecipe.php">
 				NAME: <input type="textbox" name="name"><br/><br/>
-				1st INGREDIENT<br/>
+				INGREDIENTS<br/>
 				<select name="ingredient_1">
+					<option value ="0">none</option>
 				<?php
 					foreach ($db->query('SELECT name FROM ingredient') as $row)
 					{
@@ -62,6 +63,170 @@
 					<option value="4">4</option>
 					<option value="5">5</option>
 				</select>
+				<br/>
+
+				<select name="ingredient_2">
+					<option value ="0">none</option>
+				<?php
+					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					{
+  						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					}
+				?>
+				</select>
+				<select name="ingredient_2_amount">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br/>
+
+				<select name="ingredient_3">
+					<option value ="0">none</option>
+				<?php
+					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					{
+  						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					}
+				?>
+				</select>
+				<select name="ingredient_3_amount">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br/>
+
+				<select name="ingredient_4">
+					<option value ="0">none</option>
+				<?php
+					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					{
+  						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					}
+				?>
+				</select>
+				<select name="ingredient_4_amount">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br/>
+
+				<select name="ingredient_5">
+					<option value ="0">none</option>
+				<?php
+					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					{
+  						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					}
+				?>
+				</select>
+				<select name="ingredient_5_amount">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br/>				
+
+				<select name="ingredient_6">
+					<option value ="0">none</option>
+				<?php
+					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					{
+  						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					}
+				?>
+				</select>
+				<select name="ingredient_6_amount">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br/>
+
+				<select name="ingredient_7">
+					<option value ="0">none</option>
+				<?php
+					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					{
+  						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					}
+				?>
+				</select>
+				<select name="ingredient_7_amount">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br/>
+
+				<select name="ingredient_8">
+					<option value ="0">none</option>
+				<?php
+					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					{
+  						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					}
+				?>
+				</select>
+				<select name="ingredient_8_amount">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br/>
+
+				<select name="ingredient_9">
+					<option value ="0">none</option>
+				<?php
+					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					{
+  						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					}
+				?>
+				</select>
+				<select name="ingredient_9_amount">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br/>
+
+				<select name="ingredient_10">
+					<option value ="0">none</option>
+				<?php
+					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					{
+  						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+					}
+				?>
+				</select>
+				<select name="ingredient_10_amount">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br/>				
+
 				<br/><br/>
 				<input type="submit">
 			</form>
