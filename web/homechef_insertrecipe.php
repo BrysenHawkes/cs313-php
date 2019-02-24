@@ -65,6 +65,44 @@ try
 		$id_string = $id_string . $ingredient_1;
 	}
 
+	if($ingredient_2 != 0){
+		$id_string = $id_string . "," . $ingredient_2;
+	}
+
+	if($ingredient_3 != 0){
+		$id_string = $id_string . "," . $ingredient_3;
+	}
+
+	if($ingredient_4 != 0){
+		$id_string = $id_string . "," . $ingredient_4;
+	}
+
+	if($ingredient_5 != 0){
+		$id_string = $id_string . "," . $ingredient_5;
+	}
+
+	if($ingredient_6 != 0){
+		$id_string = $id_string . "," . $ingredient_6;
+	}
+
+	if($ingredient_7 != 0){
+		$id_string = $id_string . "," . $ingredient_7;
+	}
+
+	if($ingredient_8 != 0){
+		$id_string = $id_string . "," . $ingredient_8;
+	}
+
+	if($ingredient_9 != 0){
+		$id_string = $id_string . "," . $ingredient_9;
+	}
+
+	if($ingredient_10 != 0){
+		$id_string = $id_string . "," . $ingredient_10;
+	}
+
+	$id_string = $id_string . "}'";
+
 	echo '<br/>' . $id_string;
 
 	//$stmt = $db->prepare('INSERT INTO ingredient(name,price) VALUES (:ingredient_name, 1.00);');
