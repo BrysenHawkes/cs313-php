@@ -69,7 +69,7 @@
 				<select name="ingredient_2">
 					<option value ="0">none</option>
 				<?php
-					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					foreach ($db->query('SELECT * FROM ingredient') as $row)
 					{
   						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
 					}
@@ -87,7 +87,7 @@
 				<select name="ingredient_3">
 					<option value ="0">none</option>
 				<?php
-					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					foreach ($db->query('SELECT * FROM ingredient') as $row)
 					{
   						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
 					}
@@ -105,7 +105,7 @@
 				<select name="ingredient_4">
 					<option value ="0">none</option>
 				<?php
-					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					foreach ($db->query('SELECT * FROM ingredient') as $row)
 					{
   						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
 					}
@@ -123,7 +123,7 @@
 				<select name="ingredient_5">
 					<option value ="0">none</option>
 				<?php
-					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					foreach ($db->query('SELECT * FROM ingredient') as $row)
 					{
   						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
 					}
@@ -141,7 +141,7 @@
 				<select name="ingredient_6">
 					<option value ="0">none</option>
 				<?php
-					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					foreach ($db->query('SELECT * FROM ingredient') as $row)
 					{
   						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
 					}
@@ -159,7 +159,7 @@
 				<select name="ingredient_7">
 					<option value ="0">none</option>
 				<?php
-					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					foreach ($db->query('SELECT * FROM ingredient') as $row)
 					{
   						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
 					}
@@ -177,7 +177,7 @@
 				<select name="ingredient_8">
 					<option value ="0">none</option>
 				<?php
-					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					foreach ($db->query('SELECT * FROM ingredient') as $row)
 					{
   						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
 					}
@@ -195,7 +195,7 @@
 				<select name="ingredient_9">
 					<option value ="0">none</option>
 				<?php
-					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					foreach ($db->query('SELECT * FROM ingredient') as $row)
 					{
   						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
 					}
@@ -213,7 +213,7 @@
 				<select name="ingredient_10">
 					<option value ="0">none</option>
 				<?php
-					foreach ($db->query('SELECT name FROM ingredient') as $row)
+					foreach ($db->query('SELECT * FROM ingredient') as $row)
 					{
   						echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
 					}
