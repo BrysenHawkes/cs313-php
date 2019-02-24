@@ -21,8 +21,8 @@
   		die();
 	}
 
-	$ingredient_name = htmlspecialchars($_POST['name']);
-	$ingredient_price = htmlspecialchars($_POST['price']);
+	$ingredient_name = htmlspecialchars($_GET['name']);
+	$ingredient_price = htmlspecialchars($_GET['price']);
 
 	echo "$ingredient_name\n";
 	echo "$ingredient_price\n";
