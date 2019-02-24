@@ -115,6 +115,9 @@ try
 	$amount_string = $amount_string . "}'";
 
 	echo '<br/>' . $id_string;
+	echo '<br/>' . $amount_string;
+	echo '<br/>' . $name;
+	echo '<br/>' . $directions;
 
 	$stmt = $db->prepare('INSERT INTO recipe(name,ingredient_id,amount,direction) VALUES (:recipe_name, :ingredient_id, :amount, :direction);');
 	$stmt->bindValue(':recipe_name', $name, PDO::PARAM_STR);
