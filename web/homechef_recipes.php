@@ -38,7 +38,6 @@
 			</h1>
 		</div>
 		<div class = "topnav";>
-			<a href="homechef_home.php";>Home</a>
 			<a href="homechef_recipes.php";>Recipes</a>
 			<a href="homechef_ingredients.php";>Ingredients</a>
 		</div>
